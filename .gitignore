@@ -1,0 +1,68 @@
+# Java & Maven
+target/
+*.class
+*.jar
+*.war
+*.nar
+*.zip
+*.tar.gz
+*.rar
+*.log
+.classpath
+.project
+.settings/
+bin/
+out/
+build/
+dist/
+*.iml
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-workspace
+*.sublime-project
+
+# Node.js & Frontend
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+.env.local
+.env.*.local
+
+# Environment Variables
+.env
+.env.development
+.env.production
+*.pem
+*.key
+application-local.properties
+application-dev.properties
+application.properties.local
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+postgresql.conf
+
+# OS files
+.DS_Store
+Thumbs.db
+.directory
+
+# Build artifacts
+*.o
+*.so
+*.dylib
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/

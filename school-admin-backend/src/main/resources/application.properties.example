@@ -1,0 +1,29 @@
+spring.application.name=school-admin
+
+# PostgreSQL Database Configuration
+# IMPORTANT: Copy this file to application.properties and fill in your actual credentials
+spring.datasource.url=jdbc:postgresql://localhost:5432/school_admin_db
+spring.datasource.username=postgres
+spring.datasource.password=your_postgres_password_here
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+# JPA / Hibernate
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.properties.hibernate.format_sql=true
+
+# SQL init — disabled; seeding is handled by DataInitializer.java
+spring.sql.init.mode=never
+
+# JWT - KEEP THIS SECRET!
+# Generate a strong secret key (min 256 bits)
+# You can generate one using: openssl rand -base64 32
+app.jwt.secret=your_super_secret_jwt_key_here_min_256_bits
+app.jwt.expiration=86400000
+
+# Server
+server.port=8080
+
+# Logging
+logging.level.com.school.admin=DEBUG
